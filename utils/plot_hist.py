@@ -1,4 +1,7 @@
-def plot_hist(path):
+import numpy as np
+import matplotlib as plt
+import pandas as pd
+def plot_hist_(path):
 	hist = pd.read_csv(path)
 	acc = hist["accuracy"]
 	val_acc = hist["val_accuracy"]
